@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-11-18" view-index="0" gantt-divider-location="352" resource-divider-location="300" version="3.3.3316" locale="en_US">
+    <description/>
+    <view zooming-state="default:1" id="gantt-chart">
+        <field id="tpd3" name="Name" width="192" order="0"/>
+        <field id="tpd4" name="Begin date" width="72" order="1"/>
+        <field id="tpd5" name="End date" width="72" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[9]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="079929ddde824f9794986d3da6fe134e" name="1) Requirements Gathering" meeting="false" start="2025-11-04" duration="18" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <task id="2" uid="663dc04a7ee7404aa4935b11123fe9aa" name="1.1)Questionair Administration" meeting="false" start="2025-11-04" duration="8" complete="0" expand="true">
+                <depend id="1" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="1" uid="60ce5fecfd0744cea88889e517e1009a" name="1.2) User requirements development" meeting="false" start="2025-11-14" duration="8" complete="0" expand="true">
+                <depend id="4" type="3" difference="0" hardness="Strong"/>
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" uid="c983359262a14c9cb9db863e35e74f87" name="1.3) system requirement development" meeting="false" start="2025-11-19" duration="7" complete="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+                <task id="4" uid="abae249b96754f89b0ef3c1f8d65ab47" name="1.3.1) functional requirement" meeting="false" start="2025-11-19" duration="5" complete="0" expand="true">
+                    <depend id="5" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="5" uid="b7eaa3b4abb84ee0849461475e169509" name="1.3.2) None functional requirement development" meeting="false" start="2025-11-26" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="6" uid="95f53005b668471c95a620b2e9156f4f" name="1.4) Requrement documents" meeting="true" start="2025-11-28" duration="0" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="6bcb1f811ccf4a71af263f1cf98fcc64" name="1.5) Requirements elicitation" meeting="true" start="2025-11-28" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="8" uid="d30318ee7e514f9caa91b2753ab37959" name="2) System Design" meeting="false" start="2025-11-28" duration="31" complete="0" expand="true">
+            <task id="9" uid="c593581826a94df1ab59101f56c8fb63" name="2.1) UI Design" meeting="false" start="2025-11-28" duration="1" complete="0" priority="2" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" uid="45e65b94052d45dfa2601070fc82fc0e" name="2.2) Use case diagram" meeting="false" start="2025-11-28" duration="5" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="5dc572e628084f37b32c43aa8e83d195" name="2.3) Class diagram" meeting="false" start="2025-11-28" duration="5" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="d21a5e60746646c6b313b75a3175c45d" name="2.4) Activity Diagram" meeting="false" start="2025-11-28" duration="5" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" uid="16bbb7933eaf4619b123498287f9e682" name="2.5) sequence Diagram" meeting="false" start="2025-11-28" duration="5" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" uid="0fcb1f6114b64713a01b92cd87555ec0" name="2.6) Database deign" meeting="false" start="2025-12-01" duration="30" complete="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="15" uid="ae2b2ac3a3494dac8217a54d8484f81a" name="3: Coding or System Development" meeting="false" start="2025-12-01" duration="35" complete="0" expand="true">
+            <task id="16" uid="35e5744179214bcf9503daa4f4ad22df" name="3.1 Code User Interface" meeting="false" start="2025-12-01" duration="7" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" uid="5d54ad010c0f445ba88f9a9d44ec487d" name="3.2 Develop database scripts" meeting="false" start="2026-01-12" duration="5" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" uid="6f612bf7ee0241069431660ba2bcae6f" name="3.3 Code Backend" meeting="false" start="2025-12-05" duration="14" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" uid="7fd6fee20c0246f6a44a17b92206d2dc" name="3.4 Integration" meeting="true" start="2026-01-19" duration="0" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="20" uid="9d36c2ed74494d3eb7ecfe1cbb41b8c7" name="4: Testing and Quality Assurance" meeting="false" start="2026-01-19" duration="3" complete="0" expand="true">
+            <task id="21" uid="48be8d1ba0b94a52bea89c2a53388e99" name="4.1 Unit testing" meeting="false" start="2026-01-19" duration="2" complete="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" uid="5df9a330daba40039fe9b3e51818d90e" name="4.2 Functional testing" meeting="false" start="2026-01-19" duration="2" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" uid="afacf00dce434f2da81abf833c1c0660" name="4.3 Beta testing" meeting="false" start="2026-01-19" duration="3" complete="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="24" uid="9718c0c300a246c7b553a4ec22d38ac6" name="5: Deployment" meeting="false" start="2026-01-22" duration="1" complete="0" expand="true">
+            <task id="25" uid="f646b7560b4749b0ba1251620106ff46" name="5.1 Web App Launch" meeting="false" start="2026-01-22" duration="1" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" uid="30f8520ea7d04a3ab9bc311715f21958" name="5.2 Google Playstore app launch" meeting="false" start="2026-01-22" duration="1" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" uid="0d988b2b17fe4f7a8e58a00a8c8fa3ce" name="5.3 App Store launch" meeting="false" start="2026-01-22" duration="1" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="28" uid="5e5c199ee9074834bde5059f579c40a7" name="6: Closure" meeting="false" start="2026-01-23" duration="1" complete="0" expand="true">
+            <task id="29" uid="93e9a9712ff84146b8443718bc81171f" name="6.1 Customer acceptance management" meeting="true" start="2026-01-23" duration="0" complete="0" expand="true">
+                <depend id="32" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" uid="f7881fca88d1447a9b3e7b9fd7f24dd7" name="6.2 Celebration" meeting="false" start="2026-01-23" duration="1" complete="0" expand="true">
+                <depend id="32" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="31" uid="f72a0aa2c8d4461bb59b3cb406936524" name="7: Maintenance and support" meeting="false" start="2026-01-26" duration="1" complete="0" expand="true">
+            <task id="32" uid="558fe1337b904cf5977e097520a45012" name="7.1 Setup L1 support" meeting="false" start="2026-01-26" duration="1" complete="0" expand="true"/>
+            <task id="33" uid="b2a4b428fe2b48f2a68d84d796ba683c" name="7.2 Setup L2 support" meeting="false" start="2026-01-26" duration="1" complete="0" expand="true"/>
+            <task id="34" uid="f906b994613c4227a07cbcb6d9565208" name="7.3 Setup L3 support" meeting="false" start="2026-01-26" duration="1" complete="0" expand="true"/>
+            <task id="36" uid="263596397139441bb9b749b5849f0787" name="7.4 Setup L4 support" meeting="false" start="2026-01-26" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Joel" function="4" contacts="" phone=""/>
+        <resource id="1" name="L1 support" function="6" contacts="" phone=""/>
+        <resource id="2" name="L2 support " function="7" contacts="" phone=""/>
+        <resource id="3" name="L3 support" function="8" contacts="" phone=""/>
+        <resource id="4" name="L4 support" function="9" contacts="" phone=""/>
+        <resource id="5" name="Lizzy" function="3" contacts="" phone=""/>
+        <resource id="6" name="Dr James" function="2" contacts="" phone=""/>
+        <resource id="7" name="Melisea" function="Default:1" contacts="" phone=""/>
+        <resource id="8" name="Rolantine" function="3" contacts="" phone=""/>
+        <resource id="9" name="sylvester" function="4" contacts="" phone=""/>
+        <resource id="10" name="Tester" function="11" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="11" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="1" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="2" function="7" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="3" function="8" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="4" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="5" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="5" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="5" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="5" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="6" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="6" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="7" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="8" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="8" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="8" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="8" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="9" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="9" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="9" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="9" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="9" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="10" function="11" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="IT Project manager"/>
+        <role id="2" name="Lead engineer"/>
+        <role id="3" name="Front end Developer"/>
+        <role id="4" name="back end developer"/>
+        <role id="5" name="front end designer"/>
+        <role id="6" name="L1 support"/>
+        <role id="7" name="L2 support"/>
+        <role id="8" name="L3 support"/>
+        <role id="9" name="L4 support"/>
+        <role id="10" name="security "/>
+        <role id="11" name="Tester"/>
+    </roles>
+</project>
