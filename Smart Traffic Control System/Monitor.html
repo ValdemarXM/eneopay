@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor | Smart Traffic Control</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="nav-bar">
+    <h2>Smart Control</h2>
+    <ul class="nav-items">
+      <li><a href="Smart-traffic-controll-system.html">Home</a></li>
+      <li><a href="monitor.html">Live Monitor</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <u><h1>Traffic Light Status</h1></u>
+  <h2 id="light-status">Red</h2>
+  <!-- MAIN CONTENT -->
+  <div class="main-container">
+
+    <!-- LEFT: CONTROL PANEL -->
+    <div class="control-panel">
+      <h1>Traffic Monitor Panel</h1>
+
+      <label>Select Junction</label>
+      <select id="junctions">
+        <option>Junction A</option>
+        <option>Junction B</option>
+        <option>Junction C</option>
+      </select>
+
+      <label>Traffic Status</label>
+      <select id="traffic">
+        <option>Low Traffic</option>
+        <option>Medium Traffic</option>
+        <option>High Traffic</option>
+      </select>
+
+      <button class="control-btn" onclick="refreshTraffic()">Refresh Data</button>
+    </div>
+
+    <!-- RIGHT: LIVE VIEW -->
+    <div class="image-section">
+      <u><h1>Live Traffic View</h1></u>
+
+      <div class="image-grid">
+        <img src="c:\Users\MY PC\Pictures\Saved Pictures\istockphoto-1466886653-1024x1024.jpg" alt="Camera View 1">
+        <img src="c:\Users\MY PC\Pictures\Saved Pictures\istockphoto-1472115464-1024x1024.jpg" alt="Camera View 2">
+        <img src="c:\Users\MY PC\Pictures\Saved Pictures\istockphoto-2164764072-612x612.jpg" alt="Camera View 3">
+        <img src="c:\Users\MY PC\Pictures\Saved Pictures\gettyimages-1394107109-612x612.jpg" alt="Camera View 4">
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <u><p>&copy; 2025 Smart Traffic Control Solutions. All rights reserved.</p></u>
+</footer>
+
+</body>
+</html>

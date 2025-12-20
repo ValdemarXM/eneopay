@@ -4,49 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet">
 </head>
+
 
 <body>
     <form action="#" method="post">
         <form>
         <h1 class="main-title">Variables Expenses</h1>
+        <h1> Expense Calculator</h1>
+         <p id="msg1">  </p>
 
-            <label>Rent:</label><br>
-            <input type="text" name="rent" required><br><br>
-
+            <label>rent:</label><br>
+            <input type="text" name="rent"  id="rent"oninput="calculate();" value="200"><br><br>
             <label>feeding:</label><br>  
-            <input type="text" name="feeding" required><br><br>
-
-            <label>Transport:</label><br>
-            <input type="text" name="Transport"><br><br>
-
+            <input type="text" name="feeding" id="feeding" oninput="calculate();" value="350"><br><br>
+            <label>transport:</label><br>
+            <input type="text" name="transport"id="transport"oninput="calculate();" value="400" ><br><br>
             <label>bills:</label><br>
-            <input type="text" name="Bills" required><br><br>
-
+            <input type="text" name="bills" id="bills"oninput="calculate();" value="300"><br><br>
             <label>clothing:</label><br>
-            <input type="text" name="clothing" required><br><br>
-
+            <input type="text" name="clothing"  id="clothing" oninput="calculate();" value="157"><br><br>
             <label>enjoyment:</label><br>
-            <input type="text" name="enjoyment" required><br><br>
-
+            <input type="text" name="enjoyment" id="enjoyment"oninput="calculate();" value="670"><br><br>
             <label>parents:</label><br>
-            <input type="text" name="parents" required><br><br>
-
+            <input type="text" name="parents"  id="parents"oninput="calculate();" value="2780"><br><br>
             <label>data:</label><br>
-            <input type="email" name="data" required><br><br>
-
+            <input type="email" name="data"  id="data"oninput="calculate();" value="3500"><br><br>
             <label>social:</label><br>
-            <input type="text" name="social"><br><br>
+            <input type="text" name="social"  id="social"oninput="calculate();" value="4000"><br><br>
             <label>tax%:</label><br>
-            <input type="email" name="tax %" required><br><br>
+            <input type="email" name="tax %"  id="tax"oninput="calculate();" value="80000"><br><br>
         </form>
 
+        <section>
+           <hr> <label for="income"> total Income:</label>
+            <input name="income" id="income" value="100000" oninput="calculate();" readonly="true"><br><br></hr>
+          <hr>  <label for="texpense"> total Expenses:</label>
+            <input name="texpense" id="texpense" readonly="true"/><br><br></hr>
+            <hr><label for="balance"> total balance:</label>
+            <input name="balance" id="balance" readonly="true"><br><br></hr>
+        </section>
+        <section>
+            <H2>Personal details</H2>
+        <label for="fname">First Name: </label><br>
+        <input name="fname" id="fname" required onchange="message();"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input name="lname" id="lname" required onchange="message();"><br><br>
+
+        <label for="address"> Address:</label><br>
+        <textarea name="Address" rows="4" cols="6" id="address"></textarea><br><br>
+
+        <label for="phone"> phone number</label>
+        <input type="number" id="phone" name="phone"/>
+        <lable for="title"> Title</lable>
+        <select name="title" id="title">
+        <option value="Mr">Mr</option>
+        <option value="miss">Miss</option>
+        <option value="mrs">Mrs</option>
+        </select>
+        </section>
 
         <button onclick="alert(hello)">
             click me: </button>
         <script>
             alert("Hello World");
+            function calculate() {
+            var rent=document.getElementById("rent").value;
+            var clothing=document.getElementById("clothing").value;
+            var feeding=document.getElementById("feeding").value;
+            var transport=document.getElementById("transport").value;
+            var bills=document.getElementById("bills").value;
+            var enjoyment=document.getElementById("enjoyment").value;
+            var parents=document.getElementById("parents").value;
+            var data=document.getElementById("data").value;
+            var social=document.getElementById("social").value;
+            var tax=document.getElementById("tax").value;
+            var income=document.getElementById("income").value;
+            var total_expense=parseInt(rent)+parseInt(clothing)+parseInt(feeding)+parseInt(transport)+parseInt(bills)+parseInt(enjoyment)+parseInt(parents)+parseInt(data)+parseInt(social)+parseInt(tax);
+            console.log("total_expense is:"+total_expense);
+            document.getElementById("texpense").value=total_expense;
+            
+            var total_balance=parseInt(income) - parseInt(total_expense);
+            document.getElementById("balance").value=total_balance
+
+            }
+            function message(){
+                var title=document.getElementById("title").value;
+                var first_name=document.getElementById("fname").value;
+                var last_name=document.getElementById("lname").value;
+                var expense=document.getElementById("texpense").value;
+                var income=document.getElementById("income").value;
+                var balance=document.getElementById("balance").value;
+                var textmessage="hello "+title+"  "+first_name+" "+last_name+ " your earned" +income+" CFA, and spent "+expense+" CFA, your savings"+balance
+                "Thank you and see next month."
+                document.getElementById("msg1").innerHTML=textmessage;
+            }
+            
         </script>
 
 </body>
